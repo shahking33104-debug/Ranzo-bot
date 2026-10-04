@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranzo Trading Bot</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080b09;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #111713;
+      border-bottom: 1px solid #26342b;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #35d05f;
+    }
+
+    .subtitle {
+      margin-top: 5px;
+      color: #9aa69f;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: auto;
+      padding: 15px;
+    }
+
+    .card {
+      background: #111713;
+      border: 1px solid #26342b;
+      border-radius: 15px;
+      padding: 18px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #35d05f;
+    }
+
+    .status {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .online {
+      color: #35d05f;
+      font-weight: bold;
+    }
+
+    .signal {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 22px;
+      border-radius: 12px;
+      background: #19231d;
+      color: #35d05f;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .box {
+      background: #19231d;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .label {
+      color: #8f9b94;
+      font-size: 13px;
+    }
+
+    .value {
+      margin-top: 6px;
+      font-size: 19px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      border-radius: 10px;
+      background: #35d05f;
+      color: #071009;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: #68736d;
+      padding: 20px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">RANZO</div>
+  <div class="subtitle">Trading Bot Dashboard</div>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <div class="status">
+      <span>Bot Status</span>
+      <span class="online">● ONLINE</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Market Signal</h2>
+    <div class="signal">NO TRADE</div>
+  </div>
+
+  <div class="card">
+    <h2>Market Analysis</h2>
+
+    <div class="grid">
+
+      <div class="box">
+        <div class="label">Symbol</div>
+        <div class="value">XAUUSD</div>
+      </div>
+
+      <div class="box">
+        <div class="label">Timeframe</div>
+        <div class="value">1H</div>
+      </div>
+
+      <div class="box">
+        <div class="label">RSI</div>
+        <div class="value">--</div>
+      </div>
+
+      <div class="box">
+        <div class="label">MACD</div>
+        <div class="value">--</div>
+      </div>
+
+      <div class="box">
+        <div class="label">MA 50</div>
+        <div class="value">--</div>
+      </div>
+
+      <div class="box">
+        <div class="label">MA 200</div>
+        <div class="value">--</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Trade Setup</h2>
+
+    <div class="grid">
+
+      <div class="box">
+        <div class="label">Entry</div>
+        <div class="value">--</div>
+      </div>
+
+      <div class="box">
+        <div class="label">Stop Loss</div>
+        <div class="value">--</div>
+      </div>
+
+      <div class="box">
+        <div class="label">Take Profit 1</div>
+        <div class="value">--</div>
+      </div>
+
+      <div class="box">
+        <div class="label">Take Profit 2</div>
+        <div class="value">--</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Bot Control</h2>
+    <button onclick="alert('Ranzo Bot analysis started')">
+      START ANALYSIS
+    </button>
+  </div>
+
+</div>
+
+<footer>
+  Ranzo Trading Bot • Dashboard
+</footer>
+
+</body>
+        </html>
